@@ -14,7 +14,7 @@ body::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('Logo.png'); /* adjust path if in subfolder */
+  background-image: url('Logo.png');
   background-repeat: no-repeat;
   background-size: 200px auto; /* adjust size as needed */
   opacity: 0.05; /* subtle watermark */
