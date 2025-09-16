@@ -28,22 +28,32 @@ header {
   background: #4CAF50; /* green header */
   color: #fff;
   padding: 1.2rem 0;
-  text-align: center;
 }
 
 header .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start; /* logo on left, title next */
   padding: 0 1rem;
+  gap: 1rem; /* space between logo and title */
+}
+
+header .header-container h2 {
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 header img.logo {
-  height: 50px;
+  height: 60px; /* adjust logo size */
   width: auto;
 }
 
 /* ===== Navigation ===== */
+nav {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 nav a {
   color: #fff;
   margin: 0 1rem;
@@ -105,7 +115,3 @@ footer {
 #hero {
   margin-top: 3rem;
 }
-
-
-</body>
-</html>
