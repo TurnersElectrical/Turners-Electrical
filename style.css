@@ -1,3 +1,5 @@
+<div class="container">
+  <div class="center-block">
 /* ===== Global Styles ===== */
 body {
   font-family: 'Roboto', sans-serif;
@@ -107,3 +109,6 @@ footer {
 #hero {
   margin-top: 3rem;
 }
+ <a href="contact.html" class="button">Contact Us</a>
+  </div>
+</div>
