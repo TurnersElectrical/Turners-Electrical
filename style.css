@@ -17,7 +17,7 @@ body::before {
   background-image: url('Logo.png');
   background-repeat: no-repeat;
   background-size: 200px auto; /* adjust size as needed */
-  opacity: 0.05; /* subtle watermark */
+  opacity: 0.15; /* subtle watermark */
   width: 200px;
   height: auto;
   pointer-events: none; /* allows clicks on content */
