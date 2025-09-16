@@ -51,6 +51,20 @@ a.button {
   border-radius: 4px;
   margin-top: 1rem;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  
+  /* Background logo */
+  background-image: url('logo.png'); /* adjust path if in subfolder */
+  background-repeat: no-repeat;
+  background-position: center; /* center of the page */
+  background-size: 200px auto; /* adjust size to fit nicely */
+  opacity: 0.05; /* subtle watermark effect */
+}
 
 a.button:hover {
   background: #0056b3;
