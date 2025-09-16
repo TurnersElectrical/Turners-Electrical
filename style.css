@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,24 @@ body {
   line-height: 1.6;
 }
 
+/* Watermark logo behind content */
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('logo.png'); /* adjust path if in subfolder */
+  background-repeat: no-repeat;
+  background-size: 200px auto; /* adjust size as needed */
+  opacity: 0.05; /* subtle watermark */
+  width: 200px;
+  height: auto;
+  pointer-events: none; /* allows clicks on content */
+  z-index: -1; /* behind everything */
+}
+
+/* ===== Header ===== */
 header {
   background: #007BFF;
   color: #fff;
@@ -13,6 +32,19 @@ header {
   text-align: center;
 }
 
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header img.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ===== Navigation ===== */
 nav a {
   color: #fff;
   margin: 0 1rem;
@@ -24,24 +56,19 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* ===== Container ===== */
 .container {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
+/* ===== Headings ===== */
 h1, h2 {
   color: #007BFF;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #f4f4f4;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
+/* ===== Buttons ===== */
 a.button {
   display: inline-block;
   background: #007BFF;
@@ -51,21 +78,16 @@ a.button {
   border-radius: 4px;
   margin-top: 1rem;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6;
-  
-  /* Background logo */
-  background-image: url('logo.png'); /* adjust path if in subfolder */
-  background-repeat: no-repeat;
-  background-position: center; /* center of the page */
-  background-size: 200px auto; /* adjust size to fit nicely */
-  opacity: 0.05; /* subtle watermark effect */
-}
 
 a.button:hover {
   background: #0056b3;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #f4f4f4;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
