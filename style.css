@@ -1,114 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turners Electrical | Electrician in Somerset</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <h2>Turners Electrical</h2>
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="values.html">Values</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
 <div class="container">
-  <div class="center-block">
-/* ===== Global Styles ===== */
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  line-height: 1.6;
-  background-color: #fdfdfd;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url('logo.png') no-repeat center;
-  background-size: 450px auto;
-  opacity: 0.35;
-  width: 450px;
-  height: 450px;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* ===== Header ===== */
-header {
-  background: #004080;
-  color: #fff;
-  padding: 1.2rem 0;
-  text-align: center;
-}
-
-header .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-}
-
-header img.logo {
-  height: 50px;
-  width: auto;
-}
-
-/* ===== Navigation ===== */
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Container ===== */
-.container {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-/* ===== Headings ===== */
-h1, h2 {
-  color: #004080;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-}
-
-/* ===== Buttons ===== */
-a.button {
-  display: inline-block;
-  background: #007BFF;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-a.button:hover {
-  background: #0056b3;
-}
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background: #f4f4f4;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* ===== Hero Section (Home Page) ===== */
-#hero {
-  margin-top: 3rem;
-}
- <a href="contact.html" class="button">Contact Us</a>
+  <div class="center-block" id="hero">
+    <h1>Domestic • Commercial • Industrial Electrical Services</h1>
+    <p>Contact us today for reliable electrical installation, repairs, and safety inspections across Somerset.</p>
+    <p><strong>Call:</strong> <a href="tel:07510089398">07510 089398</a></p>
+    <a href="contact.html" class="button">Contact Us</a>
   </div>
 </div>
+
+<footer>
+  &copy; 2025 Turners Electrical – Professional Electrician in Somerset
+</footer>
+
+</body>
+</html>
