@@ -27,25 +27,50 @@ body::before {
 header {
   background: #4CAF50; /* green header */
   color: #fff;
-  padding: 1.2rem 0;
+  padding: 1.2rem 1rem;
+  min-height: 180px; /* ensures logo fits */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header .header-container {
   display: flex;
   align-items: center;
   justify-content: flex-start; /* logo on left, title next */
-  padding: 0 1rem;
-  gap: 1rem; /* space between logo and title */
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
 }
 
 header .header-container h2 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 header img.logo {
-  height: 160px; /* adjust logo size */
+  height: 160px; /* large logo on desktop */
   width: auto;
+}
+
+/* ===== Responsive Logo ===== */
+@media (max-width: 768px) {
+  header img.logo {
+    height: 100px !important;
+  }
+  header .header-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header img.logo {
+    height: 70px !important;
+  }
+  header .header-container h2 {
+    font-size: 1.4rem;
+  }
 }
 
 /* ===== Navigation ===== */
@@ -114,16 +139,4 @@ footer {
 /* ===== Hero Section (Home Page) ===== */
 #hero {
   margin-top: 3rem;
-}
-/* ===== Responsive Logo ===== */
-@media (max-width: 768px) {
-  header img.logo {
-    height: 80px; /* smaller on tablets/mobiles */
-  }
-}
-
-@media (max-width: 480px) {
-  header img.logo {
-    height: 60px; /* even smaller on small phones */
-  }
 }
