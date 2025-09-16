@@ -14,11 +14,11 @@ body::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('logo.png') no-repeat center;
+  background: url('Lighting install electrical Somerset, Taunton .png') no-repeat center;
   background-size: 550px auto;
   opacity: 0.25;
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
   pointer-events: none;
   z-index: -1;
 }
