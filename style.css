@@ -8,8 +8,8 @@ body::before {
   background: url('logo.png') no-repeat center;
   background-size: 400px auto; /* adjust size as needed */
   opacity: 0.15; /* subtle watermark */
-  width: 250px;
-  height: 250px; /* match roughly the size */
+  width: 450px;
+  height: 450px; /* match roughly the size */
   pointer-events: none; /* allows clicks on content */
   z-index: -1; /* behind everything */
 }
