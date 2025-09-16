@@ -44,7 +44,7 @@ header .header-container h2 {
 }
 
 header img.logo {
-  height: 140px; /* adjust logo size */
+  height: 160px; /* adjust logo size */
   width: auto;
 }
 
@@ -114,4 +114,16 @@ footer {
 /* ===== Hero Section (Home Page) ===== */
 #hero {
   margin-top: 3rem;
+}
+/* ===== Responsive Logo ===== */
+@media (max-width: 768px) {
+  header img.logo {
+    height: 80px; /* smaller on tablets/mobiles */
+  }
+}
+
+@media (max-width: 480px) {
+  header img.logo {
+    height: 60px; /* even smaller on small phones */
+  }
 }
