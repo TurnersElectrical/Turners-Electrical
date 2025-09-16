@@ -15,10 +15,10 @@ body::before {
   left: 50%;
   transform: translate(-50%, -50%);
   background: url('logo.png') no-repeat center;
-  background-size: 450px auto;
-  opacity: 0.35;
-  width: 450px;
-  height: 450px;
+  background-size: 550px auto;
+  opacity: 0.25;
+  width: 550px;
+  height: 550px;
   pointer-events: none;
   z-index: -1;
 }
