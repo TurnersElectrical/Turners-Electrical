@@ -7,7 +7,7 @@ body::before {
   transform: translate(-50%, -50%);
   background: url('logo.png') no-repeat center;
   background-size: 450px auto; /* adjust size as needed */
-  opacity: 0.15; /* subtle watermark */
+  opacity: 0.35; /* subtle watermark */
   width: 450px;
   height: 450px; /* match roughly the size */
   pointer-events: none; /* allows clicks on content */
